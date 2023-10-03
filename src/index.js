@@ -6,6 +6,6 @@ import './js/app';
 
 if (navigator.serviceWorker) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register(`${document.location.pathname}sw.js`, { scope: document.location.pathname });
   });
 }

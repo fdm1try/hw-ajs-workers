@@ -7,7 +7,6 @@ export default class API {
     const response = await fetch(`${endpoint}/news/all`);
     try {
       data = await response.json();
-      console.log(data);
     } catch (error) {
       throw new Error('Формат ответа не соответствует требованиям.');
     }
