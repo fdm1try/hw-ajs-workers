@@ -6,7 +6,7 @@ const WorkboxWebPackPlugin = require('workbox-webpack-plugin');
 
 module.exports = (env, argv) => {
   const SERVER_USESSL = { production: true, development: false };
-  const SERVER_HOST = { production: 'onrender.com', development: 'localhost' };
+  const SERVER_HOST = { production: 'hw-ajs-workers.onrender.com', development: 'localhost' };
   const SERVER_PORT = { production: 443, development: 8088 };
 
   let productionOnlyPlugins = [];
