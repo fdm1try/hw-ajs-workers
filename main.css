@@ -1,0 +1,120 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #edf6f9;
+}
+
+.newsfeed {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 15px 30px 30px 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(72, 72, 72);
+    box-sizing: border-box;
+}
+
+.newsfeed-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.newsfeed-header-title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.newsfeed-header-refresh_button {
+    flex-shrink: 0;
+    background: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.newsfeed-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.newsfeed-post-body {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+.newsfeed-post-body-image {
+    width: 100px;
+    height: 100px;
+}
+
+/* Preload styles */
+
+.newsfeed-post-preload .newsfeed-posts {
+    gap: 4vh;
+    margin: 2vh 0;
+}
+
+.newsfeed-post-preload .newsfeed-post-body {
+    margin-top: 2vh;
+    gap: 2vh;
+}
+
+.newsfeed-post-preload .newsfeed-post-title {
+    width: 40%;
+    background-color: #ccc;
+    height: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+.newsfeed-post-preload .newsfeed-post-body-image {
+    min-width: 10vh;
+    min-height: 10vh;
+    background-color: #ccc;
+}
+
+.newsfeed-post-preload .newsfeed-post-body-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.newsfeed-post-preload .newsfeed-post-body-content_p {
+    width: 100%;
+    background-color: #ccc;
+    height: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+.newsfeed-error-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px 60px;
+    box-sizing: border-box; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+}
